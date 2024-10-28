@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".third3">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대학생 소비습관 설문지"
+        android:textColor="#131380"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  5.한 달동안 지출의 가장큰 비중을 차지하는 항목은 무엇인가요?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="아래의 내용과 당신의 상태와 가장 가까운 것을 골라주세요"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  1.본인의 현재 수입에 만족하시나요?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  2. 한 달에 고정적인 수입량은 얼마인가요?)"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  3. 고정 수입중 제일많은 수입경로는 무엇인가요?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  4.현실적으로 원하는 수입량은 얼마인가요??"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="매우만족"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="만족"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="불만족"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:text="매우불만족"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="50만원미만"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="50~70만원"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70-~100만원"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:text="100만원이상"
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="아르바이트"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:text="용돈"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:text="주식 및 투자"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="교통비"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="생활비"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="힉습관련지출"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="취미및자기계발"
+                android:textSize="11sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton17"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="50만원이하"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton18"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="50~100만원"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton19"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:text="100~150만원"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="150만원이상"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:backgroundTint="#3F4EA4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#415d80"
+        android:text="뒤로가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
