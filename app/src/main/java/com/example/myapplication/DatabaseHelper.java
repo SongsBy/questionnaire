@@ -18,6 +18,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_QUESTION1 = "QUESTION1";
     public static final String COL_QUESTION2 = "QUESTION2";
     public static final String COL_QUESTION3 = "QUESTION3";
+    public static final String COL_QUESTION4 = "QUESTION4";
+    public static final String COL_QUESTION5 = "QUESTION5";
+    public static final String COL_QUESTION6 = "QUESTION6";
+    public static final String COL_QUESTION7 = "QUESTION7";
+    public static final String COL_QUESTION8 = "QUESTION8";
+    public static final String COL_QUESTION9 = "QUESTION9";
+    public static final String COL_QUESTION10 = "QUESTION10";
 
     // 개인 정보 테이블
     public static final String TABLE_PERSONAL_INFO = "personal_info";
@@ -26,7 +33,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_REGION = "REGION";
 
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 2);
+        super(context, DATABASE_NAME, null, 4);
     }
 
     @Override
@@ -37,7 +44,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COL_SECTION + " TEXT, "
                 + COL_QUESTION1 + " TEXT, "
                 + COL_QUESTION2 + " TEXT, "
-                + COL_QUESTION3 + " TEXT)");
+                + COL_QUESTION3 + " TEXT,"
+                + COL_QUESTION4 + " TEXT,"
+                + COL_QUESTION5 + " TEXT,"
+                + COL_QUESTION6 + " TEXT,"
+                + COL_QUESTION7 + " TEXT,"
+                + COL_QUESTION8 + " TEXT,"
+                + COL_QUESTION9 + " TEXT,"
+                + COL_QUESTION10 + " TEXT)");
+
 
         // 개인 정보 테이블 생성
         db.execSQL("CREATE TABLE " + TABLE_PERSONAL_INFO +
@@ -55,13 +70,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // 설문 응답 데이터를 저장하는 메서드
-    public boolean insertData(String surveySection2, String responseQ6, String section, String responseQ1, String responseQ2, String responseQ3) {
+    public boolean insertData(String surveySection,String responseQ1,String responseQ2, String responseQ3, String responseQ4, String responseQ5, String responseQ6, String responseQ7, String responseQ8, String responseQ9, String responseQ10) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_SECTION, section);
+        contentValues.put(COL_SECTION, surveySection);
         contentValues.put(COL_QUESTION1, responseQ1);
         contentValues.put(COL_QUESTION2, responseQ2);
         contentValues.put(COL_QUESTION3, responseQ3);
+        contentValues.put(COL_QUESTION4, responseQ4);
+        contentValues.put(COL_QUESTION5, responseQ5);
+        contentValues.put(COL_QUESTION6, responseQ6);
+        contentValues.put(COL_QUESTION7, responseQ7);
+        contentValues.put(COL_QUESTION8, responseQ8);
+        contentValues.put(COL_QUESTION9, responseQ9);
+        contentValues.put(COL_QUESTION10, responseQ10);
         long result = db.insert(TABLE_NAME, null, contentValues);
 
         if (result == -1) {

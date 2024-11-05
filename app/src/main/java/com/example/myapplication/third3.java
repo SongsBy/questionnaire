@@ -51,15 +51,15 @@ public class third3 extends AppCompatActivity {
                     String responseQ5 = ((RadioButton) findViewById(radioGroupQ5.getCheckedRadioButtonId())).getText().toString();
 
 
-                    boolean isInserted = dbHelper.insertData("SurveySection", responseQ1, responseQ2, responseQ3, responseQ4, responseQ5);
-                    if (isInserted) {
-                        Toast.makeText(third3.this, "Data Saved", Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(third3.this, "Data Not Saved", Toast.LENGTH_LONG).show();
-                    }
+
 
 
                     Intent intent = new Intent(third3.this, active4.class);
+                    intent.putExtra("responseQ1", responseQ1);
+                    intent.putExtra("responseQ2", responseQ2);
+                    intent.putExtra("responseQ3", responseQ3);
+                    intent.putExtra("responseQ4", responseQ4);
+                    intent.putExtra("responseQ5", responseQ5);
                     startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(third3.this, "Please answer all questions", Toast.LENGTH_SHORT).show();
