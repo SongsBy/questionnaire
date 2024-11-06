@@ -14,12 +14,12 @@ public class finish extends AppCompatActivity {
 
     DatabaseHelper dbHelper;
     EditText edtUniversity, edtPhone, edtRegion;
-    Button btnSubmit;
+    Button btn_1,btn_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.finish); // XML 파일이 finish.xml이라고 가정합니다.
+        setContentView(R.layout.finish);
 
         // DatabaseHelper 초기화
         dbHelper = new DatabaseHelper(this);
@@ -28,10 +28,10 @@ public class finish extends AppCompatActivity {
         edtUniversity = findViewById(R.id.edt1);
         edtPhone = findViewById(R.id.edt2);
         edtRegion = findViewById(R.id.edt3);
-        btnSubmit = findViewById(R.id.btn_1);
-
+        btn_1 = findViewById(R.id.btn_1);
+        btn_2 = findViewById(R.id.btn_2);
         // 저장 버튼 클릭 시 데이터 저장
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
+        btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 각 EditText에서 입력받은 텍스트 가져오기
@@ -59,6 +59,15 @@ public class finish extends AppCompatActivity {
                         Toast.makeText(finish.this, "저장에 실패했습니다.", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+
+        });
+
+        btn_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(finish.this, cursordb.class);
+                startActivity(intent);
             }
         });
     }
