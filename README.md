@@ -1,2 +1,2 @@
-# Practice
-연습용
+# questionnaire
+간단한 설문지.
